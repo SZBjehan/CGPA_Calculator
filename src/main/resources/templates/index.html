@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>CGPA</title>
+</head>
+<body>
+<h1> CGPA Calculator </h1>
+
+<form th:action="@{/result}" th:object="${student}" method="post">
+    <div>
+        <label> A (GPA 4.0) on how many courses? </label>
+        <input type="number" id="cg1" class="form-control" name="cg1" />
+    </div>
+    <div>
+        <label> A- (GPA 3.7) on how many courses? </label>
+        <input type="number" id="cg2" class="form-control" name="cg2" />
+    </div>
+    <div>
+        <label> B+ (GPA 3.3) on how many courses? </label>
+        <input type="number" id="cg3" class="form-control" name="cg3" />
+    </div>
+    <div>
+        <label> B (GPA 3.0) on how many courses? </label>
+        <input type="number" id="cg4" class="form-control" name="cg4" />
+    </div>
+    <div>
+        <label> B- (GPA 2.7) on how many courses? </label>
+        <input type="number" id="cg5" class="form-control" name="cg5" />
+    </div>
+    <div>
+        <label> C+ (GPA 2.3) on how many courses? </label>
+        <input type="number" id="cg6" class="form-control" name="cg6" />
+    </div>
+    <div>
+        <label> C (GPA 2.0) on how many courses? </label>
+        <input type="number" id="cg7" class="form-control" name="cg7" />
+    </div>
+    <div>
+        <label> C- (GPA 1.7) on how many courses? </label>
+        <input type="number" id="cg8" class="form-control" name="cg8" />
+    </div>
+    <div>
+        <label> D+ (GPA 1.3) on how many courses? </label>
+        <input type="number" id="cg9" class="form-control" name="cg9" />
+    </div>
+    <div>
+        <label> D (GPA 1.0) on how many courses? </label>
+        <input type="number" id="cg10" class="form-control" name="cg10" />
+    </div>
+    <div>
+        <label> D- (GPA 0.7) on how many courses? </label>
+        <input type="number" id="cg11" class="form-control" name="cg11" />
+    </div>
+    <div>
+        <label> F (GPA 4.0) on how many courses? </label>
+        <input type="number" id="cg12" class="form-control" name="cg12" />
+    </div>
+    <br/>
+
+    <div>
+        <label> Thesis Grade </label>
+        <input type="number" id="cgth" class="form-control" name="cgth" />
+    </div>
+    <br/>
+
+    <div>
+        <input type="submit" value="submit"/>
+    </div>
+</form>
+
+
+</body>
+</html>
