@@ -1,0 +1,44 @@
+*{
+    background-color: #FEFEFE;
+    color: #000f65;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.index-body{
+    padding: 2em 0 2em 3em;
+}
+
+.index-title{
+    font-style: italic;
+    color: #2ea1ff;
+}
+
+.brac-logo{
+    position: absolute;
+    right: 0;
+    margin-right: 5em;
+}
+
+.cgs{
+    padding: 1em 0 0 0;
+}
+
+.cg-inp{
+    width: 4em;
+}
+
+
+
+
+
+
+.result-body{
+    text-align: center;
+    background-color: #FEFEFE;
+    color: #000f65;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.result-title{
+    text-align: center;
+}

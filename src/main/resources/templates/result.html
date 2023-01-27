@@ -2,20 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/design.css}" />
     <title>result</title>
 </head>
-<body>
+<body class="result-body">
 <h1> Result </h1>
 
-<p>Total is :</p>
+<div class="result-title">
+    <h3>CGPA obtained</h3>
 
-<p th:text="${student.getTotalCGPA()} " > </p>
+    <h2 th:text="${student.getTotalCGPA()} " > </h2>
 
-<p>Total Courses :</p>
-<p th:text="${student.getTotalCourses()} " > </p>
+    <br />
 
-<p>Total Credit :</p>
-<p th:text="${student.getTotalCredit()} " > </p>
+    <h3>Total Courses </h3>
+    <h3 th:text="${student.getTotalCourses()} " > </h3>
+
+    <h3>Total Credits Completed </h3>
+    <h3 th:text="${student.getTotalCredit()} " > </h3>
+</div>
+
+<div>
+    Total As = <span th:text="${stuent.getCg1()}" ></span>
+</div>
 
 </body>
 </html>
