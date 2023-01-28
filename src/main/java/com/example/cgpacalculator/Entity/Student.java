@@ -14,7 +14,7 @@ public class Student {
     private int cg10;
     private int cg11;
     private int cg12;
-    private int cgth;
+    private double cgth;
 
     private double cgpa;
 
@@ -41,7 +41,8 @@ public class Student {
             totalCredit = totalCredit + 4;
         }
 
-        cgpa = totalT/totalCredit;
+        cgpa = (totalT/totalCredit);
+        cgpa = (double) Math.round(cgpa * 100d) / 100d;
         return cgpa;
     }
 
@@ -178,11 +179,11 @@ public class Student {
         this.cg12 = cg12;
     }
 
-    public int getCgth() {
+    public double getCgth() {
         return cgth;
     }
 
-    public void setCgth(int cgth) {
+    public void setCgth(double cgth) {
         this.cgth = cgth;
     }
 

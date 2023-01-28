@@ -1,22 +1,38 @@
 *{
     background-color: #FEFEFE;
     color: #000f65;
-    font-family: "JetBrains Mono", monospace;
 }
 
 .index-body{
     padding: 2em 0 2em 3em;
+    overflow: hidden;
+    font-family: "JetBrains Mono", monospace;
 }
 
 .index-title{
     font-style: italic;
     color: #2ea1ff;
 }
-
+.coffee{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 2em 7em;
+}
 .brac-logo{
     position: absolute;
     right: 0;
     margin-right: 5em;
+}
+
+@media screen and (max-width: 1024px) {
+    .brac-logo{
+        position: initial;
+        height: 200px;
+    }
+    .coffee{
+        position: initial;
+    }
 }
 
 .cgs{
@@ -27,7 +43,16 @@
     width: 4em;
 }
 
-
+.submit-btn{
+    width: 8em;
+    margin: 20px;
+    -webkit-transition: color 1s; /* For Safari 3.0 to 6.0 */
+    transition: color 1s; /* For modern browsers */
+}
+.submit-btn:hover{
+    color: #ff0000;
+    cursor: pointer;
+}
 
 
 
@@ -35,10 +60,26 @@
 .result-body{
     text-align: center;
     background-color: #FEFEFE;
-    color: #000f65;
+    color: #010101;
     font-family: "JetBrains Mono", monospace;
+    overflow: hidden;
 }
 
-.result-title{
+.cgpa{
+    color: #000f65;
+}
+
+
+
+
+
+.footer{
+    overflow: hidden;
+    background-color: #000f65;
+    width: 100%;
     text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    color: #FEFEFE;
 }

@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 public class GradeController {
 
     @GetMapping("/index")
-    public String sendFom(Model model){
+    public String sendForm(Model model){
         model.addAttribute("student", new Student());
         return "index";
     }
@@ -23,6 +23,5 @@ public class GradeController {
         model.addAttribute("student", student);
         return "result";
     }
-
 
 }
